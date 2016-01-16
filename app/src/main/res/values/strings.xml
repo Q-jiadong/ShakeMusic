@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">ShakeMusic</string>
+    <string name="loading_text">Loading Sounds&#8230;</string>
+    <string name="quit_message">再次点击退出程序！</string>
+</resources>

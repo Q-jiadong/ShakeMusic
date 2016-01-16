@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="default_circle_indicator_stroke_width">1dp</dimen>
+    <dimen name="default_circle_indicator_radius">3dp</dimen>
+    <dimen name="shake_stuff_margin">30dp</dimen>
+    <dimen name="loading_view_default_width">30dip</dimen>
+    <dimen name="loading_view_stroke_width">2dp</dimen>
+    <dimen name="loading_view_margin_top">-50dp</dimen>
+</resources>
