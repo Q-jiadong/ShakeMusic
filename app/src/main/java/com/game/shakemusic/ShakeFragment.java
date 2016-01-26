@@ -54,10 +54,13 @@ public class ShakeFragment extends Fragment implements SensorEventListener{
         //float z_offset = event.values[2];
         if(event.sensor.getType() != Sensor.TYPE_ACCELEROMETER) {
             return;
-        }
-        if(sensorX < -10 || sensorX > 10) {
-            mSoundSample.playSound();
+        } else if(Math.abs(sensorX) - 9.8f  > 3.0f && Math.abs(sensorX) - 9.8f < 4.0f) {
+            mSoundSample.playSound(1);
             //Toast.makeText(getContext(), ""+sensorX, Toast.LENGTH_SHORT).show();
+        } else if(Math.abs(sensorX) - 9.8f >4.0f && Math.abs(sensorX) - 9.8f < 6.0f) {
+            mSoundSample.playSound(3);
+        } else if(Math.abs(sensorX) - 9.8f > 6.0f ) {
+            mSoundSample.playSound(5);
         }
     }
 
@@ -85,5 +88,7 @@ public class ShakeFragment extends Fragment implements SensorEventListener{
         mSensorManager.unregisterListener(this, mAccelerometer);
     }
 
+    public void getMaxValue() {
 
+    }
 }
